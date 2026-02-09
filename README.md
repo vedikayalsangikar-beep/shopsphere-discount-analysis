@@ -2,11 +2,11 @@ Do Discounts Really Drive Revenue?
 
 An end-to-end e-commerce analytics project
 
-📌 Project Overview
+Project Overview
 This project analyzes the impact of discounting on order-level revenue for a simulated e-commerce platform.
 Using SQL, Python, and Tableau, the analysis evaluates whether discounts meaningfully increase revenue or whether they erode value despite higher order volumes.
 
-📊 Dataset
+Dataset
 Synthetic but behaviorally realistic transactional data:
 
 • 505 customers
@@ -15,7 +15,7 @@ Synthetic but behaviorally realistic transactional data:
 
 • 3,000 order
 
-🧠 Analytical Approach
+Analytical Approach
 
 • Designed a relational database schema in SQLite
 
@@ -27,17 +27,17 @@ Synthetic but behaviorally realistic transactional data:
 
 • Validated findings visually using Tableau
 
-⭐ Key Insight
+Key Insight
 
 Discounts have a statistically significant negative impact on order revenue, and the revenue loss is not compensated by increased order volumes.
 
-📈 Evidence
+Evidence
 
 • Regression analysis (R² ≈ 0.89) shows strong negative discount coefficients
 
 • Visual analysis confirms declining average order value and revenue as discounts increase
 
-🧰 Tools Used
+Tools Used
 
 • SQL (SQLite)
 
@@ -45,7 +45,7 @@ Discounts have a statistically significant negative impact on order revenue, and
 
 • Tableau Public
 
-📁 Repository Structure
+Repository Structure
 
 • /data → SQLite database & Tableau-ready CSV
 
@@ -55,6 +55,6 @@ Discounts have a statistically significant negative impact on order revenue, and
 
 • case-study.pdf → one-page project summary
 
-🔗 Tableau Dashboard
+Tableau Dashboard
 
 https://public.tableau.com/views/DoDiscountsReallyDriveRevenue/DoDiscountsReallyDriveRevenue?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
