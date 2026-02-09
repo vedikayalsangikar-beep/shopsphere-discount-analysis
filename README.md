@@ -3,6 +3,7 @@
 An end-to-end e-commerce analytics project
 
 **Project Overview**
+
 This project analyzes the impact of discounting on order-level revenue for a simulated e-commerce platform.
 Using SQL, Python, and Tableau, the analysis evaluates whether discounts meaningfully increase revenue or whether they erode value despite higher order volumes.
 
