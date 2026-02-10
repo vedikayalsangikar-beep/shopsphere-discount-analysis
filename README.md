@@ -23,7 +23,9 @@ Question: Do discounts meaningfully increase revenue, or do they erode value des
 ---
 
 **Model 2: Do Discounts Improve Customer Retention?**
-Focus: Customer-level behavior and long-term value  
+
+Focus: Customer-level behavior and long-term value 
+ 
 Question: Do discounted customers return more often and contribute higher lifetime revenue?
 
 - Customer-level feature engineering in SQL  
