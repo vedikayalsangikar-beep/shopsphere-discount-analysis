@@ -1,60 +1,67 @@
-**Do Discounts Really Drive Revenue?**
+**Shopsphere: E-commerce Analytics Case Study Series**
 
-An end-to-end e-commerce analytics project
+This repository contains a multi-part analytics case study exploring how pricing and customer behavior influence business outcomes in a simulated e-commerce platform.
 
-**Project Overview**
-This project analyzes the impact of discounting on order-level revenue for a simulated e-commerce platform.
-Using SQL, Python, and Tableau, the analysis evaluates whether discounts meaningfully increase revenue or whether they erode value despite higher order volumes.
+Each model in the series focuses on a distinct business question and applies SQL, Python, and Tableau to analyze data, surface insights, and communicate results clearly.
 
-**Dataset**
-Synthetic but behaviorally realistic transactional data:
+The intent is to demonstrate structured analytical thinking, not just tool usage.
 
-• 505 customers
+**Model Index**
 
-• 60 products
+**Model 1: Do Discounts Really Drive Revenue?**
 
-• 3,000 orders
+Focus: Order-level revenue performance
 
-**Analytical Approach**
+Question: Do discounts meaningfully increase revenue, or do they erode value despite higher order volumes?
 
-• Designed a relational database schema in SQLite
+• Transaction-level SQL analysis
 
-• Generated customer, product, and order data using Python
+• Python-based regression modelling
 
-• Performed SQL joins and aggregations for exploratory analysis
+• Tableau dashboard for revenue trends
 
-• Modelled order-level revenue using OLS regression
+• Output: One-page case study + dashboard
 
-• Validated findings visually using Tableau
+**Model 2: Do Discounts Improve Customer Retention?**
 
-**Key Insight**
+Focus: Customer-level behavior and long-term value
 
-Discounts have a statistically significant negative impact on order revenue, and the revenue loss is not compensated by increased order volumes.
+Question: Do discounted customers return more often and contribute higher lifetime revenue?
 
-**Evidence**
+• Customer-level feature engineering in SQL
 
-• Regression analysis (R² ≈ 0.89) shows strong negative discount coefficients
+• Retention and engagement analysis in Python
 
-• Visual analysis confirms declining average order value and revenue as discounts increase
+• Tableau dashboard for repeat behavior and value
 
-**Tools Used**
+• Output: One-page case study + dashboard
 
-• SQL (SQLite)
+**Project Structure**
 
-• Python (pandas, statsmodels, matplotlib)
+• data/ – SQLite database and derived analysis datasets
 
-• Tableau Public
+• python/ – Data generation, analysis, and modeling scripts
 
-**Repository Structure**
+• tableau/ – Dashboard exports used in case studies
 
-• /data → SQLite database & Tableau-ready CSV
+• visuals/ – Supporting charts generated in Python
 
-• /python → data generation and regression analysis scripts
+• case-studies/ – One-page PDFs explaining each model
 
-• /tableau → dashboard screenshot
+**Tools & Skills Demonstrated**
 
-• case-study.pdf → one-page project summary
+• SQL (relational modeling, joins, aggregations, feature engineering)
 
-**Tableau Dashboard**
+• Python (pandas, statistical analysis, visualization)
 
-https://public.tableau.com/views/DoDiscountsReallyDriveRevenue/DoDiscountsReallyDriveRevenue?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+• Tableau (business-facing dashboards)
+
+• Analytical framing of ambiguous business questions
+
+**Planned Extensions**
+
+• Customer lifetime value (CLV) modeling
+
+• Cohort-based retention analysis
+
+• Experiment design and A/B testing simulation
