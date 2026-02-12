@@ -153,3 +153,5 @@ print(quartile_summary)
 
 # Export for Tableau
 quartile_summary.to_csv("data/model3_early_vs_lifetime.csv", index=False)
+
+coefficients.to_csv("data/model3_coefficients.csv", index=False)
