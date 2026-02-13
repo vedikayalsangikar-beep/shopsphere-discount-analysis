@@ -63,5 +63,7 @@ signal_df = pd.DataFrame(results)
 print(signal_df)
 
 # ---- Export data for Tableau ----
-df.to_csv("data/signal_strength.csv", index=False)
-print("signal_strength.csv created successfully")
+signal_df.to_csv("data/model4_signal_summary.csv", index=False)
+
+df.to_csv("data/model4_customer_features.csv", index=False)
+print("Exported model4_customer_features.csv")
