@@ -77,6 +77,13 @@ Method: Strategic segmentation + K-Means clustering
 Outcome: Clustering revealed behavioral structure not fully captured by rule-based segments, 
 highlighting trade-offs between interpretability and discovery.
 
+**Model 6 — Segment Validation & Alignment**
+
+Business Question: How well do strategic customer segments align with statistically derived behavioral clusters?
+
+Method: Overlap (cross-tab) analysis and revenue contribution comparison between rule-based and K-Means segments.
+
+Outcome: While premium segments largely aligned with high-performing clusters, clustering exposed structural dispersion within rule-based groups.
 
 **Repository Structure**
 
