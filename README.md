@@ -1,61 +1,113 @@
-**Shopsphere: E-commerce Analytics Case Study Series**
+**Shopsphere — End-to-End E-Commerce Analytics Case Study**
 
-This repository contains a multi-part analytics case study exploring how pricing and customer behavior influence business outcomes in a simulated e-commerce platform.
+An applied analytics project exploring revenue performance, retention dynamics, early customer signals, and segmentation strategy in a simulated e-commerce environment.
 
-Each model in the series focuses on a distinct business question and applies SQL, Python, and Tableau to analyze data, surface insights, and communicate results clearly.  
-The intent is to demonstrate structured analytical thinking, not just tool usage.
+This repository demonstrates SQL-based data modelling, statistical analysis in Python, and business-oriented visualization in Tableau.
 
----
+**Tools & Technologies**
 
-**Model Index**
+SQL (SQLite) — relational schema design, joins, aggregations, feature engineering
 
-**Model 1: Do Discounts Really Drive Revenue?**
+Python — pandas, statsmodels, scikit-learn
 
-Focus: Order-level revenue performance  
+Statistical Methods — OLS regression, logistic regression, hypothesis testing
 
-Question: Do discounts meaningfully increase revenue, or do they erode value despite higher order volumes?
+Machine Learning — K-Means clustering (unsupervised segmentation)
 
-- Transaction-level SQL analysis  
-- Python-based regression modelling  
-- Tableau dashboard for revenue trends  
-- Output: One-page case study + dashboard  
+Data Visualization — Tableau Public dashboards
 
----
+**Dataset**
 
-**Model 2: Do Discounts Improve Customer Retention?**
+Synthetic but behaviorally realistic transactional dataset:
 
-Focus: Customer-level behavior and long-term value 
- 
-Question: Do discounted customers return more often and contribute higher lifetime revenue?
+505 customers
 
-- Customer-level feature engineering in SQL  
-- Retention and engagement analysis in Python  
-- Tableau dashboard for repeat behavior and value  
-- Output: One-page case study + dashboard  
+3,000+ orders
 
----
+Multi-category products
 
-**Project Structure**
+Engineered customer-level features
 
-- `data/` – SQLite database and derived analysis datasets  
-- `python/` – Data generation, analysis, and modeling scripts  
-- `tableau/` – Dashboard exports used in case studies  
-- `visuals/` – Supporting charts generated in Python  
-- `case-studies/` – One-page PDFs explaining each model  
+All data generation scripts are included and reproducible.
 
----
+**Model Breakdown**
 
-**Tools & Skills Demonstrated**
+**Model 1 — Discount Impact on Revenue**
 
-- SQL (relational modeling, joins, aggregations, feature engineering)  
-- Python (pandas, statistical analysis, visualization)  
-- Tableau (business-facing dashboards)  
-- Analytical framing of ambiguous business questions  
+Question: Do discounts meaningfully increase order-level revenue?
 
----
+Method: OLS regression on order-level revenue
 
-**Planned Extensions**
+Outcome: Discounts showed a statistically significant negative relationship with revenue; price and quantity were stronger drivers.
 
-- Customer lifetime value (CLV) modeling  
-- Cohort-based retention analysis  
-- Experiment design and A/B testing simulation  
+**Model 2 — Discounts & Customer Retention**
+
+Question: Do discounted customers exhibit higher repeat rates?
+
+Method: Customer-level retention analysis
+
+Outcome: Higher discounts did not consistently improve repeat behavior; volume increases did not offset margin effects.
+
+**Model 3 — Early Signals of High-Value Customers**
+
+Question: Can early behavior predict long-term customer value?
+
+Method: Logistic regression using first 30-day behavioral features
+
+Outcome: Early revenue and order frequency showed meaningful predictive power for identifying high-value customers.
+
+**Model 4 — Statistical Early Behavioral Lift**
+
+Question: Which early behaviors significantly differentiate high-value customers?
+
+Method: Mean comparison, lift %, hypothesis testing
+
+Outcome: Revenue generated in the first 30 days showed strong statistical lift; discount depth did not.
+
+**Model 5 — Strategic vs Data-Driven Segmentation**
+
+Question: How does rule-based segmentation compare to clustering?
+
+Method: Strategic segmentation + K-Means clustering
+
+Outcome: Clustering revealed behavioral structure not fully captured by rule-based segments, 
+highlighting trade-offs between interpretability and discovery.
+
+
+**Repository Structure**
+
+data/              → SQLite database & derived datasets  
+
+python/            → Data generation & analysis scripts  
+
+visuals/           → Python-generated charts  
+
+tableau/           → Dashboard exports  
+
+case-studies/      → One-page executive PDFs per model  
+
+README.md
+
+**Skills Demonstrated**
+
+Structured analytical problem framing
+
+Statistical modelling & inference
+
+Customer-level feature engineering
+
+Predictive signal identification
+
+Segmentation strategy comparison
+
+Business-facing communication of quantitative findings
+
+**Dashboards & Case Studies**
+
+Each model includes:
+
+Tableau dashboard
+
+One-page executive summary (PDF)
+
+Reproducible Python code
