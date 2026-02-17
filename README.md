@@ -4,29 +4,33 @@ An applied analytics project exploring revenue performance, retention dynamics, 
 
 This repository demonstrates SQL-based data modelling, statistical analysis in Python, and business-oriented visualization in Tableau.
 
+
 **Tools & Technologies**
 
-SQL (SQLite) — relational schema design, joins, aggregations, feature engineering
+• SQL (SQLite) — relational schema design, joins, aggregations, feature engineering
 
-Python — pandas, statsmodels, scikit-learn
+• Python — pandas, statsmodels, scikit-learn
 
-Statistical Methods — OLS regression, logistic regression, hypothesis testing
+• Statistical Methods — OLS regression, logistic regression, hypothesis testing
 
-Machine Learning — K-Means clustering (unsupervised segmentation)
+• Machine Learning — K-Means clustering (unsupervised segmentation)
 
-Data Visualization — Tableau Public dashboards
+• Data Visualization — Tableau Public dashboards
+
+• Business Communication — Executive-ready 1–2 page case studies
+
 
 **Dataset**
 
 Synthetic but behaviorally realistic transactional dataset:
 
-505 customers
+• 505 customers
 
-3,000+ orders
+• 3,000+ orders
 
-Multi-category products
+• Multi-category products
 
-Engineered customer-level features
+• Engineered customer-level features
 
 All data generation scripts are included and reproducible.
 
@@ -76,38 +80,38 @@ highlighting trade-offs between interpretability and discovery.
 
 **Repository Structure**
 
-data/              → SQLite database & derived datasets  
+• data/              → SQLite database & derived datasets  
 
-python/            → Data generation & analysis scripts  
+• python/            → Data generation & analysis scripts  
 
-visuals/           → Python-generated charts  
+• visuals/           → Python-generated charts  
 
-tableau/           → Dashboard exports  
+• tableau/           → Dashboard exports  
 
-case-studies/      → One-page executive PDFs per model  
+• case-studies/      → One-page executive PDFs per model  
 
-README.md
+• README.md
 
 **Skills Demonstrated**
 
-Structured analytical problem framing
+• Structured analytical problem framing
 
-Statistical modelling & inference
+• Statistical modelling & inference
 
-Customer-level feature engineering
+• Customer-level feature engineering
 
-Predictive signal identification
+• Predictive signal identification
 
-Segmentation strategy comparison
+• Segmentation strategy comparison
 
-Business-facing communication of quantitative findings
+• Business-facing communication of quantitative findings
 
 **Dashboards & Case Studies**
 
-Each model includes:
+• Each model includes:
 
-Tableau dashboard
+• Tableau dashboard
 
-One-page executive summary (PDF)
+• One-page executive summary (PDF)
 
-Reproducible Python code
+• Reproducible Python code
