@@ -18,3 +18,11 @@ df["cumulative_revenue_%"] = df["revenue_contribution_%"].cumsum()
 
 print("\nModel 6 – Segment Economic Diagnostics\n")
 print(df)
+
+# Export for Tableau
+df.to_csv(
+    r"C:\Users\Vedika\OneDrive\Desktop\shopsphere-project\data\analysis_segment_diagnostics.csv",
+    index=False
+)
+
+print("\nCSV exported successfully.")
